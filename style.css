@@ -1,0 +1,43 @@
+body{
+  margin: 10px;
+  margin-top: 0px;
+  padding: 2px;
+  background-color: #00bcd4;
+  font-family: montserrat;
+  color: #fafafa;
+  text-align:justify;
+
+}
+
+h1 {
+  font-family: fira sans;
+  font-size: 50px;
+}
+
+h3 {
+font-weight: 400;
+font-size: 20px;
+}
+
+h2 {
+  font-family: fira sans;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto ;
+}
+
+img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+a:visited {
+color: #fafafa;
+}
+a:link {
+color: #fafafa;
+}
