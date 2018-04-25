@@ -4,15 +4,27 @@ html, body {
 
 body{
   background-color: #fbfbfb;
-  font-family: montserrat;
   color: #17242a;
   text-align:justify;
 }
 
+/*Header*/
+
 .header {
   background-color: #3aafa9;
+  color: #fbfbfb;
   display: inline-block;
-  padding: 1%;
+  position: fixed;
+  width: 100%;
+  padding-top: 1.5%;
+  z-index: 100;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  max-width: 1280px;
 }
 
 .header_logo {
@@ -21,15 +33,15 @@ body{
   display: block;
   border: 1px red solid;
   padding: 15px;
-  margin-left: 9%;
 }
 
 .header_menu {
-  color: #fbfbfb;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   float: right;
   margin: 0px;
   padding: 0px;
-  margin-right: 9%;
+
 }
 
 .header_menu_item {
@@ -39,7 +51,7 @@ body{
 }
 
 .cover {
-  height: 90%;
+  height: 100%;
   background-color: #3aafa9;
 }
 
@@ -56,19 +68,22 @@ body{
   height:auto;
   width:auto;
   position: absolute;
-    left: 49%;
+    left: 74%;
     top: 65%;
   margin:0 auto;
 }
 
 h1 {
-  font-family: fira sans;
-  font-size: 5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 4.5em;
+  line-height: .9380665066;
 }
 
 h3 {
+font-family: 'Raleway', sans-serif;
 font-weight: 400;
-font-size: 1.27em;
+font-size: 1.3em;
 }
 
 h2 {
@@ -76,16 +91,17 @@ h2 {
   font-size: 30px;
 }
 
-
-img{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+@media screen and (max-width: 582px) {
+  .header li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header_menu {
+    float: none;
+  }
 }
 
-a:hover {
-    color: hotpink;
-}
 
 .clearfix:after {
   visibility: hidden;
