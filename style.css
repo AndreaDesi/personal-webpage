@@ -8,7 +8,9 @@ body{
   text-align:justify;
 }
 
-/*Header*/
+/*--------
+--Header--
+--------*/
 
 .header {
   background-color: #3aafa9;
@@ -16,7 +18,8 @@ body{
   display: inline-block;
   position: fixed;
   width: 100%;
-  padding-top: 1.5%;
+  padding-top: 0.9%;
+  padding-bottom: 0.9%;
   z-index: 100;
 }
 
@@ -32,23 +35,46 @@ body{
   float: left;
   display: block;
   border: 1px red solid;
-  padding: 15px;
+  width: 130px;
+
 }
+
+.header_logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .header_menu {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   float: right;
   margin: 0px;
   padding: 0px;
+  font-size: 1.2em;
 
 }
 
 .header_menu_item {
   display: inline-block;
   border: 1px red solid;
-  padding: 15px
+  padding: 6px;
+  margin-left: 30px;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+/*-------
+--Cover--
+-------*/
 
 .cover {
   height: 100%;
@@ -57,41 +83,55 @@ body{
 
 .cover_caption {
   position: absolute;
-    left: 15%;
+    left: 11%;
     top: 37%;
   margin:0 auto;
   color: #fbfbfb;
 }
 
 .cover_caption_copy {
-  display: table-celle;
-  height:auto;
-  width:auto;
+  display: table-cell;
+  height: fit-content;
+  width: fit-content;
   position: absolute;
-    left: 74%;
-    top: 65%;
+    left: 70.5%;
+    top: 64%;
   margin:0 auto;
 }
 
 h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  font-size: 4.5em;
+  font-size: 5em;
   line-height: .9380665066;
 }
 
 h3 {
 font-family: 'Raleway', sans-serif;
-font-weight: 400;
-font-size: 1.3em;
+font-weight: 300;
+font-size: 1.7em;
 }
 
-h2 {
-  font-family: fira sans;
-  font-size: 30px;
+/*--------
+--Banner--
+--------*/
+
+.banner {
+  height: 40%;
 }
 
-@media screen and (max-width: 582px) {
+.banner_copy {
+  display: table-cell;
+  text-align: center;
+  margin:0 auto;
+}
+
+
+/*------------
+--Responsive--
+------------*/
+
+@media screen and (max-width: 670px) {
   .header li {
     float: none;
     display: block;
