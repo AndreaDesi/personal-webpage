@@ -1,11 +1,12 @@
 html, body {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body{
-  background-color: #fbfbfb;
-  color: #17242a;
   text-align:justify;
+  background-color: #E8E7DE;
 }
 
 
@@ -14,8 +15,8 @@ body{
 --------*/
 
 .header {
-  background-color: #3aafa9;
-  color: #fbfbfb;
+  background-color: #078891;
+  color: #E8E7DE;
   display: inline-block;
   position: fixed;
   width: 100%;
@@ -32,7 +33,6 @@ body{
 }
 
 .header_logo {
-  color: #fbfbfb;
   float: left;
   display: block;
   border: 1px red solid;
@@ -41,19 +41,19 @@ body{
 }
 
 .header_logo img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3px;
 }
 
 .header_menu {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: #E8E7DE;
   float: right;
   margin: 0px;
   padding: 0px;
-  font-size: 1.2em;
-
+  font-size: 1.27em;
 }
 
 .header_menu_item {
@@ -69,8 +69,23 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #fbfbfb;
+    color: #E8E7DE;
 }
+
+.header_menu_item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #E8E7DE;
+    transition: width .5s;
+}
+
+.header_menu_item:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
 
 /*-------
 --Cover--
@@ -78,7 +93,7 @@ a:visited {
 
 .cover {
   height: 100%;
-  background-color: #3aafa9;
+  background-color: #078891;
 }
 
 .cover_caption {
@@ -86,7 +101,7 @@ a:visited {
     left: 11%;
     top: 37%;
   margin:0 auto;
-  color: #fbfbfb;
+  color: #E8E7DE;
 }
 
 .cover_caption_copy {
@@ -120,22 +135,18 @@ font-size: 1.7em;
 .banner {
   height: 35.5%;
   width: 100%;
-  background-color: red;
   margin: 0;
 
 }
 
 .banner_copy {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: auto;
-  width: 50%;
-  padding-top: 6.5%;
-  padding-bottom: 6.5%;
-  position: inherit;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+    transform: translateY(-50%);
+  position: relative;
   display: block;
+  text-align: center;
   font-family: 'Cabin', sans-serif;
 }
 
@@ -143,15 +154,13 @@ font-size: 1.7em;
   text-align: center;
   font-size: 4em;
   margin: 0;
+  color: #03587A;
 }
 
 
 /*---------
 --Content--
 ---------*/
-.content {
-  width: 100%;
-}
 
 /*----------
 --About me--
@@ -163,30 +172,54 @@ font-size: 1.7em;
   max-width: 1100px;
   height: 600px;
   margin: 5% auto;
-  background-image: url(About_me.png);
-  background-size: contain, cover;
+  background-image: url(img/About_me.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 20px 80px 0 rgba(0,0,0,.65);
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.30);
 }
 
-
-.Box_caption {
-margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    padding: 16% 0 10% 0;
-    height: auto;
-    width: 50%;
-    position: inherit;
+.Box_caption_About_me {
+    position: relative;
     display: block;
+    padding: 0;
+    margin: 0 auto;
+    top: 50%;
+      transform: translateY(-50%);
     font-size: 5em;
     font-family: 'Cabin', sans-serif;
+    text-align: center;
+    color: #E8E7DE;
 }
-
 
 /*-------
 --Work--
 -------*/
+
+.Box_Work {
+  display: block;
+  width: 80%;
+  max-width: 1100px;
+  height: 600px;
+  margin: 5% auto;
+  background-image: url(img/Work.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.30);
+}
+
+
+.Box_caption_Work {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  top: 50%;
+    transform: translateY(-50%);
+  font-size: 5em;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  color: #E8E7DE;
+}
 
 /*---------
 --Contact--
@@ -226,6 +259,11 @@ margin-right: auto;
 }
 
 
+
+
+/*----------
+--Clearfix--
+----------*/
 
 .clearfix:after {
   visibility: hidden;
