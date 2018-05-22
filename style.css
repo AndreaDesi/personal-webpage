@@ -352,94 +352,79 @@ font-size: 1.7em;
 --About me--
 ----------*/
 
-.Box_About_me {
+.Box_1 {
   display: -webkit-box;
   position: relative;
   width: 80%;
   max-width: 1100px;
-  height: 600px;
-  margin: 1% auto;
-  background-image: url(img/About_me.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  max-height: 600px;
+  margin: 1% 15%;
   box-shadow: 0 20px 80px 0 rgba(3,88,122,.30);
-  overflow: hidden;
 }
 
-.Box_caption_About_me {
-  position: absolute;
-  display: block;
-  padding: 0;
-  margin: 0 auto;
-  top: 50%;
-  font-size: 5em;
-  font-family: 'Cabin', sans-serif;
-  text-align: center;
-  color: #E8E7DE;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.Overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(3, 88, 122, 0.5);
-}
-
-.Overlay:hover {
-    background: rgba(0, 0, 0, 0);
-    transition: 1s;
-}
-
-/*-------
---Work--
--------*/
-
-.Box_Work {
+.Box_2 {
   display: -webkit-box;
   position: relative;
   width: 80%;
   max-width: 1100px;
-  height: 600px;
-  margin: 5% auto;
-  background-image: url(img/Work.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  max-height: 600px;
+  margin: 5% 16%;
   box-shadow: 0 20px 80px 0 rgba(3,88,122,.30);
+}
+
+.Box_image {
+  position: relative;
   overflow: hidden;
 }
 
+.Box_image img {
+  width: 100%;
+  transition: 0.5s;
+}
 
-.Box_caption_Work {
+
+.Box_caption_1 {
   position: absolute;
-  display: block;
-  padding: 0;
-  margin: 0 auto;
+  top: 0%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 88, 122, 0.8);
+  transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+.Box_caption_2 {
+  position: absolute;
+  top: 0%;
+  left: 200%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 88, 122, 0.8);
+  transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+.Box_caption_1 h3, .Box_caption_2 h3 {
+  position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
   font-size: 5em;
   font-family: 'Cabin', sans-serif;
   text-align: center;
   color: #E8E7DE;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.Overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(3, 88, 122, 0.5);
+
+.Box_image:hover .Box_caption_1, .Box_image:hover .Box_caption_2  {
+  left: 0%;
+}
+.Box_image:hover img {
+  transform: scale(1.05);
 }
 
-.Overlay:hover {
-    background: rgba(0, 0, 0, 0);
-    transition: 1s;
-}
+
 /*---------
 --Contact--
 ---------*/
@@ -448,6 +433,11 @@ font-size: 1.7em;
 /*--------
 --Footer--
 --------*/
+
+
+/*----------------
+--Text Animation--
+----------------*/
 
 /*------------
 --Responsive--
