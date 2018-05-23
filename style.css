@@ -63,6 +63,10 @@ body{
   margin-left: 30px;
 }
 
+.header_menu_item a {
+  color: #E8E7DE;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -348,9 +352,9 @@ font-size: 1.7em;
 --Content--
 ---------*/
 
-/*----------
---About me--
-----------*/
+/*-------------
+--Content Box--
+-------------*/
 
 .Box_1 {
   display: -webkit-box;
