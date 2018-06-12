@@ -16,7 +16,6 @@ a {
   color: #FF6B6B;
 }
 a:hover {
-  color: #ff9a9a;
   text-decoration: none;
 }
 
@@ -132,6 +131,12 @@ a:visited {
   width: 400px;
   height: 400px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.box-img:hover {
+  transform: scale(1.03);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .testo {
@@ -385,6 +390,7 @@ a:visited {
   .timeline-centered .period .timeline-title {
     left: auto;
   }
+
 }
 
 /*----------------------------------------------
@@ -396,6 +402,66 @@ a:visited {
 }
 .marker-outline .timeline-item:hover .timeline-marker:before {
   background: #FF6B6B;
+}
+
+/*--------
+--Banner--
+--------*/
+
+.banner {
+  height: 35.5%;
+  width: 100%;
+  margin: 0;
+  margin-top: 3%;
+}
+
+.banner_copy {
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+}
+
+.banner_copy h3 {
+  text-align: center;
+  font-size: 3vw;
+  margin: 0;
+  color: #193156;
+}
+
+/*--------
+--Cards--
+--------*/
+.cards {
+  max-width: 1200px;
+  margin: 0px auto 40px;
+}
+
+.card {
+  width: 30%;
+  margin: 0 1.5%;
+  float: left;
+}
+
+.card_image {
+  width: 100%;
+  height: auto;
+  transform: scale(0.6);
+}
+
+.card_copy {
+  padding: 0px 20px;
+}
+
+.card_copy h3 {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 2vw;
 }
 
 

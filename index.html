@@ -7,17 +7,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
 <link rel="stylesheet" href="css/index_style.css">
+<link rel="stylesheet" href="css/aos.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,800," rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 <script src="js/jquery.js"> </script>
 </head>
 <!--Body-->
 <body>
+<!--Preload-->
+<div class="preload">
+  <div class="spinner">
+    <div class="arrow-up">
+      <div id="line1"> </div>
+      <div id="line4"> </div>
+    </div>
+    <div class="arrow-down">
+      <div id="line3"> </div>
+      <div id="line2"> </div>
+    </div>
+  <div id="square"> </div>
+  <div id="rhombus-sx"> </div>
+  <div id="rhombus-dx"> </div>
+</div>
+</div>
 <!--Header-->
   <header class="header clearfix">
     <div class="container">
     <a href="index.html" class="header_logo">
-      <img src="img/design.svg">
+      <img src="img/index/design.svg">
     </a>
     <ul class="header_menu">
       <li class="header_menu_item"><a href="index.html">Home</a></li>
@@ -29,33 +46,33 @@
 <!--Cover-->
   <section class="cover">
     <section class="cover_mask">
-    <div id="object_1"><img src="img/svg/Cerchio_e_frecce.svg"></div>
-    <div id="object_2"><img src="img/svg/Cerchio_Rombi.svg"></div>
-    <div id="object_3"><img src="img/svg/Frecce_dx.svg"></div>
-    <div id="object_4"><img src="img/svg/Frecce_sx.svg"></div>
-    <div id="object_5"><img src="img/svg/Frecce_triangolo_cerchio_dx.svg"></div>
-    <div id="object_6"><img src="img/svg/Frecce_triangolo_cerchio_sx.svg"></div>
-    <div id="object_7"><img src="img/svg/Frecce_X.svg"></div>
-    <div id="object_8"><img src="img/svg/Freccia_dx.svg"></div>
-    <div id="object_9"><img src="img/svg/Freccia_grande1.svg"></div>
-    <div id="object_10"><img src="img/svg/Freccia_grande1.svg"></div>
-    <div id="object_11"><img src="img/svg/Freccia_piccola.svg"></div>
-    <div id="object_12"><img src="img/svg/Freccia_sx.svg"></div>
-    <div id="object_13"><img src="img/svg/Quadrato_dx.svg"></div>
-    <div id="object_14"><img src="img/svg/Quadrato_sx.svg"></div>
-    <div id="object_15"><img src="img/svg/Rombi_Frecce.svg"></div>
-    <div id="object_16"><img src="img/svg/Stemma.svg"></div>
-    <div id="object_17"><img src="img/svg/Triangolo.svg"></div>
-    <div id="object_18"><img src="img/svg/Triangolo.svg"></div>
-    <div id="object_19"><img src="img/svg/Zigzag_grande.svg"></div>
-    <div id="object_20"><img src="img/svg/zigzag1.svg"></div>
-    <div id="object_21"><img src="img/svg/zigzag2.svg"></div>
+    <div id="object_1"><img src="img/index/svg/Cerchio_e_frecce.svg"></div>
+    <div id="object_2"><img src="img/index/svg/Cerchio_Rombi.svg"></div>
+    <div id="object_3"><img src="img/index/svg/Frecce_dx.svg"></div>
+    <div id="object_4"><img src="img/index/svg/Frecce_sx.svg"></div>
+    <div id="object_5"><img src="img/index/svg/Frecce_triangolo_cerchio_dx.svg"></div>
+    <div id="object_6"><img src="img/index/svg/Frecce_triangolo_cerchio_sx.svg"></div>
+    <div id="object_7"><img src="img/index/svg/Frecce_X.svg"></div>
+    <div id="object_8"><img src="img/index/svg/Freccia_dx.svg"></div>
+    <div id="object_9"><img src="img/index/svg/Freccia_grande1.svg"></div>
+    <div id="object_10"><img src="img/index/svg/Freccia_grande1.svg"></div>
+    <div id="object_11"><img src="img/index/svg/Freccia_piccola.svg"></div>
+    <div id="object_12"><img src="img/index/svg/Freccia_sx.svg"></div>
+    <div id="object_13"><img src="img/index/svg/Quadrato_dx.svg"></div>
+    <div id="object_14"><img src="img/index/svg/Quadrato_sx.svg"></div>
+    <div id="object_15"><img src="img/index/svg/Rombi_Frecce.svg"></div>
+    <div id="object_16"><img src="img/index/svg/Stemma.svg"></div>
+    <div id="object_17"><img src="img/index/svg/Triangolo.svg"></div>
+    <div id="object_18"><img src="img/index/svg/Triangolo.svg"></div>
+    <div id="object_19"><img src="img/index/svg/Zigzag_grande.svg"></div>
+    <div id="object_20"><img src="img/index/svg/zigzag1.svg"></div>
+    <div id="object_21"><img src="img/index/svg/zigzag2.svg"></div>
 
 <div id="layer">
   <div class="cover_caption">
-      <h1>Andrea De Simone</h1>
+      <h1 data-aos="fade-up" data-aos-duration="500">Andrea De Simone</h1>
   <div class="cover_caption_copy">
-      <h3>Personal website</h3>
+      <h3 data-aos="fade-up" data-aos-duration="700">Personal website</h3>
   </div>
 </div>
     </section>
@@ -64,14 +81,16 @@
 <!--Banner-->
 <section class="banner clearfix">
     <div class="banner_copy">
-      <h3>Welcome to my website :)</h3>
+      <h3 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="200">Welcome to my website :)</h3>
 </section>
 
 <!--Content-->
 <div class="content"></div>
 <!--About me-->
 <section class="Box_1">
-  <div class="Box_image"> <img src="img/About_me.png"> </img>
+  <div class="Box_image"> <img src="img/index/About_me.png"> </img>
     <div class="Box_caption_1">
       <h3>About</h3>
     </div>
@@ -79,7 +98,7 @@
 </section>
 <!--Work-->
 <section class="Box_2">
-  <div class="Box_image"> <img src="img/Work.png"> </img>
+  <div class="Box_image"> <img src="img/index/Work.png"> </img>
     <div class="Box_caption_2">
       <h3>Work</h3>
     </div>
@@ -98,8 +117,13 @@
 </h2>
 
 <!--Script-->
+<script src="js/preload.js"></script>
 <script src="js/header_shadow.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/objects.js"></script>
+<script>
+   AOS.init();
+ </script>
 <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
 </body>
 </html>

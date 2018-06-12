@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/work_style.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,800," rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 <script src="js/jquery.js"> </script>
@@ -14,78 +14,24 @@
 <!--Body-->
 <body>
 <!--Header-->
-  <header class="header clearfix">
-    <div class="container">
-    <a href="" class="header_logo">
-      <img src="img/design.svg">
-    </a>
-    <ul class="header_menu">
-      <li class="header_menu_item"><a href="#">Home</a></li>
-      <li class="header_menu_item"><a href="#">About</a></li>
-      <li class="header_menu_item"><a href="#">Work</a></li>
-      <li class="header_menu_item"><a href="#">Contact</a></li>
-    </div>
-    </header>
+<header class="header clearfix">
+  <div class="container">
+  <a href="index.html" class="header_logo">
+    <img src="img/index/design.svg">
+  </a>
+  <ul class="header_menu">
+    <li class="header_menu_item"><a href="index.html">Home</a></li>
+    <li class="header_menu_item"><a href="about.html">About</a></li>
+    <li class="header_menu_item"><a href="work.html">Work</a></li>
+    <li class="header_menu_item"><a href="#">Contact</a></li>
+  </div>
+  </header>
 <!--Cover-->
-  <section class="cover">
-    <section class="cover_mask">
-    <div id="object_1"><img src="img/svg/Cerchio_e_frecce.svg"></div>
-    <div id="object_2"><img src="img/svg/Cerchio_Rombi.svg"></div>
-    <div id="object_3"><img src="img/svg/Frecce_dx.svg"></div>
-    <div id="object_4"><img src="img/svg/Frecce_sx.svg"></div>
-    <div id="object_5"><img src="img/svg/Frecce_triangolo_cerchio_dx.svg"></div>
-    <div id="object_6"><img src="img/svg/Frecce_triangolo_cerchio_sx.svg"></div>
-    <div id="object_7"><img src="img/svg/Frecce_X.svg"></div>
-    <div id="object_8"><img src="img/svg/Freccia_dx.svg"></div>
-    <div id="object_9"><img src="img/svg/Freccia_grande1.svg"></div>
-    <div id="object_10"><img src="img/svg/Freccia_grande1.svg"></div>
-    <div id="object_11"><img src="img/svg/Freccia_piccola.svg"></div>
-    <div id="object_12"><img src="img/svg/Freccia_sx.svg"></div>
-    <div id="object_13"><img src="img/svg/Quadrato_dx.svg"></div>
-    <div id="object_14"><img src="img/svg/Quadrato_sx.svg"></div>
-    <div id="object_15"><img src="img/svg/Rombi_Frecce.svg"></div>
-    <div id="object_16"><img src="img/svg/Stemma.svg"></div>
-    <div id="object_17"><img src="img/svg/Triangolo.svg"></div>
-    <div id="object_18"><img src="img/svg/Triangolo.svg"></div>
-    <div id="object_19"><img src="img/svg/Zigzag_grande.svg"></div>
-    <div id="object_20"><img src="img/svg/zigzag1.svg"></div>
-    <div id="object_21"><img src="img/svg/zigzag2.svg"></div>
 
-<div id="layer">
-  <div class="cover_caption">
-      <h1>Andrea De Simone</h1>
-  <div class="cover_caption_copy">
-      <h3>Personal website</h3>
-  </div>
-</div>
-    </section>
-
-  </section>
 <!--Banner-->
-<section class="banner clearfix">
-    <div class="banner_copy">
-      <h3>Welcome to my website :)</h3>
-</section>
-
 <!--Content-->
-<div class="content"></div>
 <!--About me-->
-<section class="Box_1">
-  <div class="Box_image"> <img src="img/About_me.png"> </img>
-    <div class="Box_caption_1">
-      <h3>About</h3>
-    </div>
-  </div>
-</section>
 <!--Work-->
-<section class="Box_2">
-  <div class="Box_image"> <img src="img/Work.png"> </img>
-    <div class="Box_caption_2">
-      <h3>Work</h3>
-    </div>
-  </div>
-</section>
-
 <!--Contact-->
 
 <!--Footer-->
@@ -98,8 +44,12 @@
 </h2>
 
 <!--Script-->
+<script src="js/preload.js"></script>
 <script src="js/header_shadow.js"></script>
-<script src="js/objects.js"></script>
+<script src="js/aos.js"></script>
+<script>
+   AOS.init();
+ </script>
 <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
 </body>
 </html>
