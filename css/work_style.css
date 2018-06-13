@@ -6,7 +6,7 @@ html, body {
 
 body{
   text-align:justify;
-  background-color: #E8E7DE;
+  background-color: #F7F7F2;
 }
 
 
@@ -16,7 +16,7 @@ body{
 
 .header {
   background-color: #078891;
-  color: #E8E7DE;
+  color: #F7F7F2;
   display: inline-block;
   position: fixed;
   width: 100%;
@@ -94,11 +94,64 @@ a:visited {
      box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+/*---------
+--Content--
+---------*/
+.content {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 100%;
+  padding: 7% 70px;
+}
+
+.card {
+  position: relative;
+  width: 50%;
+}
+
+
+.card_image img {
+  bottom: 0px;
+  width: 100%;
+}
+
+.one {
+  box-shadow: 41px 51px 68px 5px rgba(0,0,0,0.06);
+  z-index: 50;
+  visibility: visible;
+}
+
+.two {
+  visibility: visible;
+}
+
+.three {
+  box-shadow:-41px 51px 68px 5px rgba(0,0,0,0.06);
+  z-index: 50;
+  visibility: visible;
+}
+
+.page_name {
+  position: absolute;
+top: 83.81%;
+left: 50px;
+width: 60.56%;
+}
+
+.page_name h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 2vw;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #193156;
+}
 /*--------
 --Footer--
 --------*/
 .footer {
-position: relative;
+position: sticky;
 background-color: #193156;
 padding: 60px 0;
 }
@@ -123,7 +176,7 @@ float: left;
 }
 
 .footer_element_content h3 {
-  font-size: 3vh;
+  font-size: 1.5vw;
   line-height: 1.4375rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
