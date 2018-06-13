@@ -102,7 +102,7 @@ a:visited {
   display: flex;
   flex-flow: row wrap;
   min-height: 100%;
-  padding: 7% 70px;
+  padding: 3% 90px;
 }
 
 .card {
@@ -136,7 +136,7 @@ a:visited {
   position: absolute;
 top: 83.81%;
 left: 50px;
-width: 60.56%;
+width: 61.80%;
 }
 
 .page_name h3 {
@@ -146,6 +146,7 @@ width: 60.56%;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #193156;
+  margin-bottom: 0;
 }
 /*--------
 --Footer--
