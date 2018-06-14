@@ -64,7 +64,7 @@ body{
 }
 
 a {
-  color: #E8E7DE;
+  color: #F7F7F2;
 }
 
 a:link {
@@ -73,7 +73,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #E8E7DE;
+    color: #F7F7F2;
 }
 
 .header_menu_item::after {
@@ -114,6 +114,12 @@ a:visited {
 .card_image img {
   bottom: 0px;
   width: 100%;
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.card_image img:hover {
+  transform: scale(1.05);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .one {
@@ -155,6 +161,7 @@ width: 62.80%;
 position: sticky;
 background-color: #193156;
 padding: 60px 0;
+margin-top: 5%;
 }
 
 .footer_container {
@@ -181,14 +188,14 @@ float: left;
   line-height: 1.4375rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  color: #E8E7DE;
+  color: #F7F7F2;
 }
 
 .footer_element_content p {
   font-size: 2.1vh;
   line-height: 0.8rem;
   font-family: 'Cabin', sans-serif;
-  color: #E8E7DE;
+  color: #F7F7F2;
 }
 
 .footer_element_social {

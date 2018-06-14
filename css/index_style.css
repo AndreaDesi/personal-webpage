@@ -398,7 +398,7 @@ font-size: 1.7vw;
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(3, 88, 122, 0.8);
+  background-color: rgba(3, 88, 122, 1);
   transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
 }
 
@@ -408,7 +408,7 @@ font-size: 1.7vw;
   left: 200%;
   width: 100%;
   height: 100%;
-  background-color: rgba(3, 88, 122, 0.8);
+  background-color: rgba(3, 88, 122, 1);
   transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
 }
 
@@ -433,10 +433,6 @@ font-size: 1.7vw;
   transform: scale(1.05);
 }
 
-
-/*---------
---Contact--
----------*/
 
 
 /*--------
