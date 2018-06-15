@@ -89,6 +89,10 @@ a:visited {
     color: #F7F7F2;
 }
 
+a:hover {
+  color: #F7F7F2;
+}
+
 .header_menu_item::after {
     content: '';
     display: block;
